@@ -8,7 +8,7 @@ function onInputChange(event) {
 
   if ((span.textContent = event.currentTarget.value.trim())) {
     console.log(event.currentTarget.value.trim());
-  } else if ((event.currentTarget.value.trim() = " ")) {
+  } else if ((event.currentTarget.value = " ")) {
     return (span.textContent = "Anonymous");
   }
 }
