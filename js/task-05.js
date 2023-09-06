@@ -6,9 +6,9 @@ input.addEventListener("input", onInputChange);
 function onInputChange(event) {
   span.textContent = event.currentTarget.value;
 
-  if ((span.textContent = event.currentTarget.value)) {
-    console.log(event.currentTarget.value);
-  } else if ((event.currentTarget.value = " ")) {
+  if ((span.textContent = event.currentTarget.value.trim())) {
+    console.log(event.currentTarget.value.trim());
+  } else if ((event.currentTarget.value.trim() = " ")) {
     return (span.textContent = "Anonymous");
   }
 }
